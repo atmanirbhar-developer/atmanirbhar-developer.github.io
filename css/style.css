@@ -157,6 +157,12 @@ body {
 .clear {
   clear: both;
 }
+.section#comments {
+  border-color: #fff;
+  border: 1px 1px 1px 1px;
+  border-style: solid;
+  background: #dde !important;
+}
 #container {
   position: relative;
 }
@@ -1371,4 +1377,10 @@ pre .javascript .function {
 .tagcloud a {
   margin-right: 5px;
   display: inline-block;
+}
+.section#comments {
+  border-color: white;
+  border: 1px 1px 1px 1px;
+  border-style: solid;
+  background: #dde !important;
 }
