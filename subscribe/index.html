@@ -15,7 +15,7 @@
 <meta property="og:description" content="Subscribe             window.addEventListener(&quot;load&quot;, function() {         document.getElementById(&#39;subscribe-form&#39;).addEventListener(&quot;submit&quot;, function(e) {         e.prev">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-01T12:00:49.000Z">
-<meta property="article:modified_time" content="2020-11-29T12:34:26.908Z">
+<meta property="article:modified_time" content="2020-11-29T13:13:40.496Z">
 <meta property="article:author" content="A developer">
 <meta property="article:tag" content="Blogs  software developer self help">
 <meta name="twitter:card" content="summary">
@@ -115,16 +115,17 @@
             var item = elements.item(i);
             obj[item.name] = item.value;
         }
-        var data = {"email":"mailtochandan@gmail.com"};
+
+
         $.ajax({
-            url: 'https://3lsun4wc51.execute-api.ap-south-1.amazonaws.com/prod/subscribe',
-            type: 'post',
+            url: 'https://fjyhenv75h.execute-api.ap-south-1.amazonaws.com/prod/subscribe',
+            type: 'POST',
             dataType: 'json',
             contentType: 'application/json',
             success: function (data) {
                alert('Subscribed!');
             },
-            data: JSON.stringify(data)
+            data: JSON.stringify(obj)
         });
 
 
@@ -134,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.atmanirbhar-developer.com/subscribe/index.html" data-id="cki33w8px0000m0fj3roc5n33" class="article-share-link">Share</a>
+      <a data-url="https://www.atmanirbhar-developer.com/subscribe/index.html" data-id="cki35pkzs0000qgfj3a1w9qbd" class="article-share-link">Share</a>
       
       
     </footer>
